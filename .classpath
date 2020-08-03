@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="lib"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="log"/>
+	<classpathentry kind="src" path="conf"/>
+	<classpathentry kind="lib" path="C:/toaeai_s/lib/log4j-1.2.17.jar" sourcepath="C:/Users/kou/AppData/Local/Temp/.org.sf.feeling.decompiler1582682576368/source/log4j-1.2.17-sources-1582687815223.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/toaeai_s/lib/mysql-connector-java-8.0.18.jar" sourcepath="C:/Users/t_cho/AppData/Local/Temp/.org.sf.feeling.decompiler1589433576304/source/mysql-connector-java-8.0.18-sources.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/toaeai_s/lib/ojdbc8.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/toaeai_s/lib/slf4j-api-1.5.11.jar" sourcepath="C:/Users/kou/AppData/Local/Temp/.org.sf.feeling.decompiler1582596027479/source/slf4j-api-1.5.11-sources-1582596028213.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

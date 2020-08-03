@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+
+	<!-- ファイル出力 -->
+	<appender name="toaediFileAppender" class="org.apache.log4j.FileAppender">
+	 <param name="threshold" value="error"/>
+		<param name="File" value="/toaeai_s/log/toaedi.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d  %c - %m [%t] (%F:%L)%n"/>
+		</layout>
+	</appender>
+
+	<!-- コンソール出力 -->
+	<appender name="toaediConsoleAppender" class="org.apache.log4j.ConsoleAppender">
+	    <param name="threshold" value="info"/>
+		<param name="Target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d  %c - %m [%t] (%F:%L)%n"/>
+		</layout>
+	</appender>
+
+    <!-- エラーログ 用Appender _${db.name}-->
+    <appender name="Error_File_Appender" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="/toaeai_s/log/error_${current.date}.log" />
+        <param name="MaxBackupIndex" value="10" />
+        <param name="MaxFileSize" value="10MB" />
+        <param name="Append" value="true" />
+        <param name="Encoding" value="UTF-8" />
+        <param name="Threshold" value="ERROR" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy/MMM/dd HH:mm:ss.SSS} [%-5p] %m%n" />
+        </layout>
+    </appender>
+
+	<!-- 出力設定 -->
+
+
+	<root>
+		<level value="error" />
+		<appender-ref ref="toaediFileAppender" />
+		<appender-ref ref="Error_File_Appender" />
+		<appender-ref ref="toaediConsoleAppender" />
+
+	</root>
+
+
+
+
+</log4j:configuration>
